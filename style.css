@@ -1,0 +1,55 @@
+.resistor-band-large {
+    top: 0%;
+    width: 3.071%;
+    height: 100%;
+    cursor: pointer;
+    /* border-radius: 4px; */
+}
+.resistor-band-small {
+    top: 10.5%;
+    width: 3.071%;
+    height: 79.2%;
+    cursor: pointer;
+    /* border-radius: 4px; */
+}
+.resistor-transparent {
+    background-color: #7F6000;
+    opacity: 0.33;
+}
+
+.resistor-band-large:hover, .resistor-band-small:hover {
+    transform: scale(1.08);
+}
+
+.resistor-band-selected {
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
+
+.no-color-symbol {
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 6px,
+        white 6px,
+        white 12px
+    );
+    border-radius: inherit;
+}
+
+.color-box {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+.color-box:hover {
+    transform: scale(1.08);
+}
+
+.color-box-selected {
+    transform: scale(0.75);
+}
